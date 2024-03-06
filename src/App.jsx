@@ -1,19 +1,22 @@
 // import { useState } from "react";
-import { students, cats, dogs } from "./data";
+
 import "./App.css";
-import StudentList from "./components/StudentList";
-import CatList from "./components/CatList";
-import DogList from "./components/DogList";
+import StudentListContainer from "./routes/StudentListContainer";
+import CatListContainer from "./routes/CatsListContainer";
+import DogListContainer from "./routes/DogsListContainer";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="container">
-      <StudentList students={students} />
-      <CatList cats={cats} />
-      <DogList dogs={dogs} />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<StudentListContainer />} />
+        <Route path="/cats" element={<CatListContainer />} />
+        <Route path="/dogs" element={<DogListContainer />} />
+      </Routes>
+    </>
   );
 }
 
