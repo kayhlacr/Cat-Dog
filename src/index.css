@@ -3,4 +3,8 @@
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: #7171cc;
+  opacity: 0.8;
+  background-image: linear-gradient(45deg, #45c6f7 50%, #7171cc 50%);
+  background-size: 10px 10px;
 }
