@@ -3,6 +3,8 @@ import StudentListContainer from "./routes/StudentListContainer";
 import CatListContainer from "./routes/CatsListContainer";
 import DogListContainer from "./routes/DogsListContainer";
 import { NavLink, Routes, Route, useNavigate } from "react-router-dom";
+import CatDetailsPage from "./routes/CatDetailsPage";
+import DogDetailsPage from "./routes/DogDetailsPage";
 
 function App() {
   const navigate = useNavigate();
@@ -33,11 +35,12 @@ function App() {
           Random Page
         </button>
       </nav>
-
       <Routes>
         <Route path="/" element={<StudentListContainer />} />
         <Route path="/cats" element={<CatListContainer />} />
         <Route path="/dogs" element={<DogListContainer />} />
+        <Route path="/cats/:catId" element={<CatDetailsPage />} />
+        <Route path="/dogs/:dogId" element={<DogDetailsPage />} />
       </Routes>
     </>
   );

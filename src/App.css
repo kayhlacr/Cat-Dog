@@ -104,3 +104,29 @@ h1 {
   background-color: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   padding-left: 5px;
 }
+
+.cat-details-card {
+  border: 1px solid black;
+  background-color: lightgray;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  color: seagreen;
+}
+
+.cat-details-card h1 {
+  color: black;
+}
+
+.dog-details-card {
+  border: 1px solid black;
+  background-color: lightgray;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  color: teal;
+}
+
+.dog-details-card h1 {
+  color: black;
+}
